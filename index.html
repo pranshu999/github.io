@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Main page</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mainpage.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	
+	
+
+</head>
+<body>
+
+	
+  <div class="header">
+  		<ul id="navbar">
+  			<li style="margin-left: 5%;"><a href="">Cinephile</a></li>
+  			<li style="margin-left: 30%;">
+  				<form>
+  					<input type="text" name="search">
+  				</form>
+  			</li>
+  			<li style="margin-left: 85%;"><a href=""><i class="fa fa-user-plus" style="color: white;"></i></a></li>
+  			<li style="margin-left: 90%;"><a href=""><i class="fa fa-bell" style="color: white;"></i></a></li>
+  			<li style="margin-left: 95%;"><a href=""><i class="fa fa-user" style="color: white;"></i></a></li>
+
+  			
+  		</ul>
+  		
+  </div>
+
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    	<div class="spinner diagonal part-1"></div>
+    	<div class="spinner horizontal"></div>
+    	<div class="spinner diagonal part-2"></div>
+  </label>
+
+  <div id="sidebarMenu">
+
+    	<ul class="sidebarMenuInner">
+      		
+      		<li><a href="" target="">My List</a></li>
+      		<li><a href="" target="">Watched</a></li>
+      		<li><a href="" target="">Recommendations</a></li>
+      		<li><a href="" target="">Trending</a></li>
+			<li><a href="" target="">My Account</a></li>
+
+    	</ul>
+  </div>
+  <div class="content">
+  		
+				<div class="feed">
+			
+						<div class="post">
+							<img src="images/placeholder.png" class="poster"/>
+							<div class="info-strip">
+								<span class="movie-name"></span>
+								<span class="span-info">
+									<button class="movie-info">Info</button>
+								</span>
+							</div>
+							<div class="icons">
+								<i class="fa fa-thumbs-o-up"></i>
+								<i class="fa fa-star"></i>
+								<input type="range" min="0" max="10" value="0" class="slider" id="myRange">
+								<i class="fa fa-check"></i>
+								<i class="fa fa-eye"></i>
+							</div>
+						</div>
+					</div>
+					<div class="cachedFeed">
+						<div class="post">
+							<img src="images/placeholder.png" class="poster"/>
+							<div class="info-strip">
+								<span class="movie-name"></span>
+								<span class="span-info">
+									<button class="movie-info">Info</button>
+								</span>
+							</div>
+							<div class="icons">
+								<i class="fa fa-thumbs-o-up"></i>
+								<i class="fa fa-star"></i>
+								<input type="range" min="0" max="10" value="0" class="slider" id="myRange">
+								<i class="fa fa-check"></i>
+								<i class="fa fa-eye"></i>
+							</div>
+						</div>
+					</div>
+
+		  
+  </div>
+  <button id="loadFeed">Scrolled feed</button>
+  <button type="button" id="load"  style="margin-top: 100px;">Scrolled Page</button>
+  <div id="test">
+	
+  </div>
+
+</body>
+<script>
+	
+
+</script>
+<script src="script/localforage.js"></script>
+<script type="text/javascript" src="script/mainpage2.js"></script>
+
+</html>
